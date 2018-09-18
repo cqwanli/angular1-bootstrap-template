@@ -8,8 +8,20 @@
 </head>
 
 <body>
-  <div ng-app="app" ng-controller="myCtrl">
-    <input type="text" ng-model="name">
+  <div ng-app="app">
+    <div ng-controller="myCtrl">
+      <input type="text" ng-model="name">
+      <label class="btn btn-primary" uib-btn-checkbox ng-model="name">Left</label>
+    </div>
+    <home></home>
+    <div ng-controller="defaultCtrl">
+      <div class="panel-heading">
+        <h3>Products</h3>
+      </div>
+      <div class="panel-body">
+        <div unordered-list='products' list-property="price | currency"></div>
+      </div>
+    </div>
   </div>
 </body>
 

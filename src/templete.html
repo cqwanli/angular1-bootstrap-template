@@ -4,26 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
   <title>Document</title>
 </head>
 
 <body>
-  <div ng-app="app">
+  <div ng-app='app'>
     <div ng-controller="myCtrl">
-      <input type="text" ng-model="name">
-      <label class="btn btn-primary" uib-btn-checkbox ng-model="name">Left</label>
+      <p>{{name}}</p>
+      <p>{{money}}</p>
+      <div thousand-input val="money"></div>
     </div>
-    <home></home>
-    <div ng-controller="defaultCtrl">
-      <div class="panel-heading">
-        <h3>Products</h3>
-      </div>
-      <div class="panel-body">
-        <div unordered-list='products' list-property="price | currency"></div>
-      </div>
-    </div>
-
-    <sasac-input ng-model="money" value="money" />
   </div>
 </body>
 
